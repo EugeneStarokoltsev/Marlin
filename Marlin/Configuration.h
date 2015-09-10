@@ -426,8 +426,8 @@ const bool Z_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the logic
 //=========================== Manual Bed Leveling ===========================
 //===========================================================================
 
- #define MANUAL_BED_LEVELING  // Add display menu option for bed leveling
- #define MESH_BED_LEVELING    // Enable mesh bed leveling
+// #define MANUAL_BED_LEVELING  // Add display menu option for bed leveling
+// #define MESH_BED_LEVELING    // Enable mesh bed leveling
 
 #ifdef MANUAL_BED_LEVELING
   #define MBL_Z_STEP 0.025  // Step size while manually probing Z axis
@@ -575,7 +575,7 @@ const bool Z_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the logic
 
 // default settings
 
-#define DEFAULT_AXIS_STEPS_PER_UNIT   {3200.0/20/2.0,3200.0/20/2.0,3200/0.8,94}  // default steps per unit for Ultimaker
+#define DEFAULT_AXIS_STEPS_PER_UNIT   {3200.0/20/2.0,3200.0/20/2.0,3200/0.8,96} // Mendel i3 from Sintron with MK8
 #define DEFAULT_MAX_FEEDRATE          {300, 300, 3, 25}    // (mm/sec)
 #define DEFAULT_MAX_ACCELERATION      {3000,3000,100,10000}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for Skeinforge 40+, for older versions raise them a lot.
 
