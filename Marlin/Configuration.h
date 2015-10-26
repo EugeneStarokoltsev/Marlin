@@ -405,8 +405,8 @@ const bool Z_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the logic
 #define X_MIN_POS 0
 #define Y_MIN_POS 0
 #define Z_MIN_POS 0
-#define X_MAX_POS 190
-#define Y_MAX_POS 190
+#define X_MAX_POS 200
+#define Y_MAX_POS 200
 #define Z_MAX_POS 200
 
 //===========================================================================
@@ -571,13 +571,14 @@ const bool Z_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the logic
  * MOVEMENT SETTINGS
  */
 
-#define HOMING_FEEDRATE {50*60, 50*60, 3*60, 0}  // set the homing speeds (mm/min)
+#define HOMING_FEEDRATE {50*60, 50*60, 30*60, 0}  // set the homing speeds (mm/min)
 
 // default settings
 
-#define DEFAULT_AXIS_STEPS_PER_UNIT   {3200.0/20/2.0,3200.0/20/2.0,3200/0.8,96} // Mendel i3 from Sintron with MK8
-#define DEFAULT_MAX_FEEDRATE          {300, 300, 3, 25}    // (mm/sec)
-#define DEFAULT_MAX_ACCELERATION      {3000,3000,100,10000}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for Skeinforge 40+, for older versions raise them a lot.
+//#define DEFAULT_AXIS_STEPS_PER_UNIT   {3200.0/20/2.0,3200.0/20/2.0,3200/0.8,96} // Mendel i3 from Sintron with MK8
+#define DEFAULT_AXIS_STEPS_PER_UNIT   {3200.0/20/2.0,3200.0/20/2.0,3200/8,96} // Mendel i3 from Sintron with MK8 and new Z axis
+#define DEFAULT_MAX_FEEDRATE          {300, 300, 30, 25}    // (mm/sec)
+#define DEFAULT_MAX_ACCELERATION      {3000,3000,1000,10000}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for Skeinforge 40+, for older versions raise them a lot.
 
 #define DEFAULT_ACCELERATION          3000    // X, Y, Z and E acceleration in mm/s^2 for printing moves
 #define DEFAULT_RETRACT_ACCELERATION  3000    // E acceleration in mm/s^2 for retracts
@@ -585,7 +586,7 @@ const bool Z_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the logic
 
 // The speed change that does not require acceleration (i.e. the software might assume it can be done instantaneously)
 #define DEFAULT_XYJERK                20.0    // (mm/sec)
-#define DEFAULT_ZJERK                 0.4     // (mm/sec)
+#define DEFAULT_ZJERK                 4     // (mm/sec)
 #define DEFAULT_EJERK                 5.0    // (mm/sec)
 
 
