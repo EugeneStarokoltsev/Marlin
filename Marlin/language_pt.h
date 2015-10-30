@@ -92,10 +92,8 @@
 #define MSG_TEMPERATURE                     "Temperatura"
 #define MSG_MOTION                          "Movimento"
 #define MSG_VOLUMETRIC                      "Filamento"
-#define MSG_VOLUMETRIC_ENABLED		        "E in mm3"
-#define MSG_FILAMENT_SIZE_EXTRUDER_0        "Fil. Dia. 1"
-#define MSG_FILAMENT_SIZE_EXTRUDER_1        "Fil. Dia. 2"
-#define MSG_FILAMENT_SIZE_EXTRUDER_2        "Fil. Dia. 3"
+#define MSG_VOLUMETRIC_ENABLED              "E in mm3"
+#define MSG_FILAMENT_DIAM                   "Fil. Diam."
 #define MSG_CONTRAST                        "Contraste"
 #define MSG_STORE_EPROM                     "Guardar memoria"
 #define MSG_LOAD_EPROM                      "Carregar memoria"
@@ -142,8 +140,8 @@
 #define MSG_RETRACT_ARROW                   "Retrair \x7E"
 #define MSG_STEPPER_RELEASED                "Iniciado."
 
-#ifdef DELTA_CALIBRATION_MENU
-    #define MSG_DELTA_CALIBRATE             "Calibracao Delta"
+#if ENABLED(DELTA_CALIBRATION_MENU)
+    #define MSG_DELTA_CALIBRATE             "Delta Calibracao"
     #define MSG_DELTA_CALIBRATE_X           "Calibrar X"
     #define MSG_DELTA_CALIBRATE_Y           "Calibrar Y"
     #define MSG_DELTA_CALIBRATE_Z           "Calibrar Z"

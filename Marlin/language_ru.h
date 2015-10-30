@@ -83,9 +83,7 @@
 #define MSG_MOTION                          "Механика"
 #define MSG_VOLUMETRIC                      "Пруток"
 #define MSG_VOLUMETRIC_ENABLED              "E в mm3"
-#define MSG_FILAMENT_SIZE_EXTRUDER_0        "Диаметр прутка 1"
-#define MSG_FILAMENT_SIZE_EXTRUDER_1        "Диаметр прутка 2"
-#define MSG_FILAMENT_SIZE_EXTRUDER_2        "Диаметр прутка 3"
+#define MSG_FILAMENT_DIAM                   "Диаметр прутка"
 #define MSG_CONTRAST                        "Контраст LCD"
 #define MSG_STORE_EPROM                     "Сохранить в EEPROM"
 #define MSG_LOAD_EPROM                      "Считать из EEPROM"
@@ -127,7 +125,7 @@
 #define MSG_END_HOUR                        "часов"
 #define MSG_END_MINUTE                      "минут"
 
-#ifdef DELTA_CALIBRATION_MENU
+#if ENABLED(DELTA_CALIBRATION_MENU)
     #define MSG_DELTA_CALIBRATE             "Калибровка Delta"
     #define MSG_DELTA_CALIBRATE_X           "Калибровать X"
     #define MSG_DELTA_CALIBRATE_Y           "Калибровать Y"

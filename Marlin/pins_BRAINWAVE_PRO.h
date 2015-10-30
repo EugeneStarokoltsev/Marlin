@@ -31,7 +31,7 @@
 #define Z_DIR_PIN          28
 #define Z_ENABLE_PIN       37
 #define Z_MAX_PIN          36
-#define Z_MIN_PIN          17  // Bed probe
+#define Z_MIN_PIN          17  // Bed Z probe
 
 #define E0_STEP_PIN        35
 #define E0_DIR_PIN         34
@@ -54,9 +54,9 @@
 #define PS_ON_PIN          -1
 #define KILL_PIN           -1
 #define ALARM_PIN          -1
-#define SDCARDDETECT       12
+#define SD_DETECT_PIN      12
 
-#ifndef SDSUPPORT
+#if DISABLED(SDSUPPORT)
 // these pins are defined in the SD library if building with SD support
   #define SCK_PIN          21
   #define MISO_PIN         23
