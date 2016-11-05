@@ -309,9 +309,14 @@
 // Ki: 0.32
 // Kd: 46.39
 
-#define  DEFAULT_Kp 13.46
-#define  DEFAULT_Ki 0.78
-#define  DEFAULT_Kd 58.23
+//Old
+//#define  DEFAULT_Kp 13.46
+//#define  DEFAULT_Ki 0.78
+//#define  DEFAULT_Kd 58.23
+
+#define  DEFAULT_Kp 22.96
+#define  DEFAULT_Ki 2.34
+#define  DEFAULT_Kd 56.42
 
 #endif // PIDTEMP
 
@@ -1031,7 +1036,7 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the l
 // Use this option to override the number of step signals required to
 // move between next/prev menu items.
 //
-//#define ENCODER_STEPS_PER_MENU_ITEM 5
+#define ENCODER_STEPS_PER_MENU_ITEM 2
 
 /**
  * Encoder Direction Options
